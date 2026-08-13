@@ -124,12 +124,22 @@ ImpactLab/
 
 ---
 
-📸 Visual Walkthrough
-Platform Interface
-The main interface provides a centralized view for managing research and innovation entries.
-Database Structure
+## 📸 Visual Walkthrough
+
+### Platform Interface
+
+<p align="center">
+  <img src="impactlab.png" alt="ImpactLab Interface" width="45%">
+  <img src="platform.png" alt="ImpactLab Platform" width="45%">
+</p>
+
+### Database Structure
+
 The MySQL database stores the structured information required by the platform, including research problems, ideas, impact scores, and statuses.
 
+<p align="center">
+  <img src="Innovation%20DataBase.png" alt="ImpactLab Database Schema" width="80%">
+</p>
 
 ---
 
@@ -140,28 +150,16 @@ git clone <YOUR-GITHUB-REPOSITORY-URL>
 cd ImpactLab
 Alternatively, download the repository as a ZIP file.
 
-
----
-
-
 2. Move the Project to XAMPP
 Copy the project folder into:
 C:\xampp\htdocs\
 The final structure should be:
 C:\xampp\htdocs\ImpactLab\
 
-
----
-
-
 3. Start XAMPP
 Open the XAMPP Control Panel and start:
 Apache
 MySQL
-
-
----
-
 
 4. Create the Database
 Open phpMyAdmin:
@@ -169,10 +167,6 @@ http://localhost/phpmyadmin
 Create a new database named:
 innovations
 Make sure the database tables and columns match the queries used by the PHP files.
-
-
----
-
 
 5. Configure the Database Connection
 Open:
@@ -196,9 +190,6 @@ if ($conn->connect_error) {
 Security Note: Never commit real production database credentials or passwords to GitHub.
 
 
----
-
-
 6. Run the Application
 Open your browser and navigate to:
 http://localhost/ImpactLab/
@@ -214,6 +205,8 @@ With Apache running on port 80, run:
 ngrok http 80
 ngrok will generate a temporary public HTTPS URL that can be used to access the local application remotely.
 Architecture with ngrok
+```text
+
                      Internet
                         │
                         ▼
@@ -237,8 +230,7 @@ Architecture with ngrok
               │ MySQL Database   │
               └──────────────────┘
 This approach is intended for development, testing, and demonstrations. It is not a replacement for production hosting.
-
-
+```
 ---
 
 
@@ -248,7 +240,6 @@ Problem
 Free hosting environments introduced limitations around MySQL databases, database naming, permissions, and configuration. These restrictions caused compatibility and database connection issues during deployment.
 Solution
 The project was maintained in a controlled local XAMPP environment where Apache, PHP, and MySQL could be configured directly. This provided a more reliable development and testing environment.
-
 
 ---
 
@@ -260,9 +251,7 @@ Solution
 ngrok was used as a temporary HTTPS tunnel between the local Apache server and the public internet.
 This allowed the application to remain locally hosted while still being accessible during demonstrations.
 
-
 ---
-
 
 🔐 Security Considerations
 Although ImpactLab is primarily an academic and portfolio project, several security practices should be considered before production deployment:
