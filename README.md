@@ -133,14 +133,6 @@ ImpactLab/
   <img src="platform.png" alt="ImpactLab Platform" width="45%">
 </p>
 
-### Database Structure
-
-The MySQL database stores the structured information required by the platform, including research problems, ideas, impact scores, and statuses.
-
-<p align="center">
-  <img src="Innovation%20DataBase.png" alt="ImpactLab Database Schema" width="80%">
-</p>
-
 ---
 
 
@@ -241,17 +233,12 @@ Free hosting environments introduced limitations around MySQL databases, databas
 Solution
 The project was maintained in a controlled local XAMPP environment where Apache, PHP, and MySQL could be configured directly. This provided a more reliable development and testing environment.
 
----
-
-
 Challenge 2 — Remote Demonstration
 Problem
 The application needed to be demonstrated remotely without introducing additional hosting configuration issues.
 Solution
 ngrok was used as a temporary HTTPS tunnel between the local Apache server and the public internet.
 This allowed the application to remain locally hosted while still being accessible during demonstrations.
-
----
 
 🔐 Security Considerations
 Although ImpactLab is primarily an academic and portfolio project, several security practices should be considered before production deployment:
@@ -262,10 +249,6 @@ Validate and sanitize user input.
 Restrict database permissions according to the application’s requirements.
 Use HTTPS for production deployments.
 Disable unnecessary database exposure to the public internet.
-
-
----
-
 
 🚀 Future Improvements
 Potential future development directions include:
@@ -281,17 +264,11 @@ Potential future development directions include:
 🤖 AI-assisted research and idea evaluation
 📱 Improved mobile responsiveness
 
-
----
-
 🎯 Project Goals
 ImpactLab aims to demonstrate how software engineering and structured data management can be applied to organize research and innovation around real-world global challenges.
 The project combines:
 Research + Technology + Data + Innovation + Social Impact
 into a single platform.
-
-
----
 
 
 📚 Learning Outcomes
